@@ -65,7 +65,7 @@ getJS.onclick = () => {
 }
 getCSS.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open("GET", "public/style.css")
+    request.open("GET", "/style.css")
     request.onreadystatechange = () => {
         if (request.readyState === 4) {
             if (request.status >= 200 && request.status < 300) {
